@@ -1,16 +1,33 @@
 # RepoPulse
 
-**RepoPulse** analyzes any public GitHub repository and helps developers improve repository presentation, README quality, discoverability, and star potential.
+<p align="center">
+  <strong>Analyze any GitHub repository and get a score, improvement checklist, README suggestions, topic ideas, and star-growth tips.</strong>
+</p>
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-repo--pulse.vercel.app-6366f1?style=for-the-badge)](https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GitHub-Dragonia--developer%2FRepoPulse-181717?style=for-the-badge&logo=github)](https://github.com/Dragonia-developer/RepoPulse)
-[![License](https://img.shields.io/badge/License-MIT-emerald-500?style=for-the-badge)](./LICENSE)
+<p align="center">
+  <a href="https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/">
+    <img src="https://img.shields.io/badge/Try%20Live%20Demo-RepoPulse-6366f1?style=for-the-badge" alt="Live Demo">
+  </a>
+</p>
 
-## Live Demo
+<p align="center">
+  <a href="https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/">
+    <img src="https://i.ibb.co/tw6MZT3w/image.png" alt="RepoPulse Dashboard" width="950">
+  </a>
+</p>
 
-**Try it now → [https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/](https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/)**
+<p align="center">
+  <strong>Improve your repository's discoverability, presentation, and star potential.</strong><br>
+  Get actionable insights, missing improvements, README upgrades, and growth recommendations.
+</p>
 
-[![RepoPulse Dashboard](https://i.ibb.co/tw6MZT3w/image.png)](https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/)
+<p align="center">
+  <a href="https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/">🌐 Live Demo</a>
+  ·
+  <a href="https://github.com/Dragonia-developer/RepoPulse">⭐ GitHub Repository</a>
+</p>
+
+---
 
 ## Features
 
