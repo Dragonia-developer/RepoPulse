@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Activity, ExternalLink, Github } from "lucide-react";
+import { Activity, Github } from "lucide-react";
 import Link from "next/link";
-import { DEMO_URL, GITHUB_REPO_URL, SCREENSHOT_URL, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,19 +19,10 @@ export const metadata: Metadata = {
   description:
     "Analyze any public GitHub repository. Get a RepoPulse score, README improvements, topic suggestions, and shareable reports.",
   keywords: ["github", "readme", "repository", "open source", "analyzer"],
-  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: "RepoPulse",
     description: "Improve your GitHub repository presentation and star potential.",
     type: "website",
-    url: DEMO_URL,
-    images: [{ url: SCREENSHOT_URL, width: 1200, height: 630, alt: "RepoPulse Dashboard" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "RepoPulse",
-    description: "Analyze GitHub repos and boost README quality & discoverability.",
-    images: [SCREENSHOT_URL],
   },
 };
 
@@ -57,18 +47,9 @@ export default function RootLayout({
                 Repo<span className="text-primary">Pulse</span>
               </span>
             </Link>
-            <nav className="flex items-center gap-3">
+            <nav className="flex items-center gap-4">
               <a
-                href={DEMO_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-              >
-                <ExternalLink className="size-4" />
-                <span className="hidden sm:inline">Live Demo</span>
-              </a>
-              <a
-                href={`${GITHUB_REPO_URL}#readme`}
+                href="https://github.com/Dragonia-developer/RepoPulse#readme"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -76,7 +57,7 @@ export default function RootLayout({
                 Docs
               </a>
               <a
-                href={GITHUB_REPO_URL}
+                href="https://github.com/Dragonia-developer/RepoPulse"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 rounded-lg border border-border px-3 py-1.5 text-sm transition-colors hover:bg-accent"
