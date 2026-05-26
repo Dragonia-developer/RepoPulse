@@ -8,6 +8,12 @@
   <a href="https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/">
     <img src="https://img.shields.io/badge/Try%20Live%20Demo-RepoPulse-6366f1?style=for-the-badge" alt="Live Demo">
   </a>
+  <a href="https://github.com/Dragonia-developer/RepoPulse">
+    <img src="https://img.shields.io/badge/GitHub-Dragonia--developer%2FRepoPulse-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+  <a href="./LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-emerald-500?style=for-the-badge" alt="License">
+  </a>
 </p>
 
 <p align="center">
@@ -70,8 +76,8 @@
 
 ### Prerequisites
 
-- Node.js 18+
-- npm, pnpm, or yarn
+- **Node.js** 18.17 or later
+- **npm**, pnpm, or yarn
 
 ### Installation
 
@@ -89,23 +95,42 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) and analyze any public repository.
 
+### Production build
+
+```bash
+npm run build
+npm run start
+```
+
 ### Optional: GitHub Token
 
-Unauthenticated requests are limited to **60/hour**. For higher limits, create a [Personal Access Token](https://github.com/settings/tokens) and add:
+Unauthenticated API requests are limited to **60/hour**. For up to **5,000/hour**, create a [Personal Access Token](https://github.com/settings/tokens) (public repo access is enough):
 
 ```bash
 cp .env.example .env.local
-# Edit .env.local:
+```
+
+Add to `.env.local`:
+
+```env
 GITHUB_TOKEN=ghp_your_token_here
 ```
 
+### Deploy (Vercel)
+
+1. Push this repo to GitHub
+2. Import the project on [Vercel](https://vercel.com/new)
+3. Add `GITHUB_TOKEN` in **Environment Variables** (optional, recommended)
+4. Deploy — your live URL will be ready in minutes
+
 ## Usage
 
-1. Enter a public GitHub repository URL
-2. Click **Analyze**
-3. Review your RepoPulse score and category breakdown
-4. Use **Copy Fixes** or **Generate README Upgrade** to improve your repo
-5. **Download Report** as Markdown for your records
+1. Open the [live demo](https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/) or run locally
+2. Enter a public GitHub repository URL
+3. Click **Analyze**
+4. Review your RepoPulse score and category breakdown
+5. Use **Copy Fixes** or **Generate README Upgrade** to improve your repo
+6. **Download Report** as Markdown for your records
 
 ### Example repositories to try
 
@@ -134,24 +159,32 @@ src/
     └── repo.ts
 ```
 
-## Screenshots
-
-[![RepoPulse — analyze any GitHub repository](https://i.ibb.co/tw6MZT3w/image.png)](https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/)
-
 ## Scripts
 
 | Command | Description |
 |---------|-------------|
 | `npm run dev` | Start development server |
-| `npm run build` | Production build |
-| `npm run start` | Start production server |
+| `npm run build` | Create production build |
+| `npm run start` | Run production server |
 | `npm run lint` | Run ESLint |
 
 ## API
 
 ### `GET /api/analyze?url={githubUrl}`
 
-Returns repository data and analysis JSON.
+Fetches public GitHub data and returns analysis JSON.
+
+**Example:**
+
+```bash
+curl "http://localhost:3000/api/analyze?url=https://github.com/vercel/next.js"
+```
+
+**Query parameters:**
+
+| Parameter | Description |
+|-----------|-------------|
+| `url` | Full GitHub URL or `owner/repo` |
 
 ## License
 
