@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0f0f14"/>
+  <rect x="60" y="60" width="1080" height="510" rx="24" fill="#1a1a24" stroke="#2e2e3a" stroke-width="2"/>
+  <circle cx="120" cy="120" r="24" fill="#6366f1"/>
+  <rect x="160" y="100" width="200" height="16" rx="8" fill="#3f3f50"/>
+  <rect x="160" y="130" width="320" height="12" rx="6" fill="#2e2e3a"/>
+  <rect x="100" y="200" width="1000" height="280" rx="16" fill="#12121a" stroke="#2e2e3a" stroke-width="1" stroke-dasharray="8 8"/>
+  <text x="600" y="350" text-anchor="middle" fill="#6b6b80" font-family="system-ui,sans-serif" font-size="24">RepoPulse Dashboard Screenshot</text>
+  <text x="600" y="390" text-anchor="middle" fill="#4a4a5c" font-family="system-ui,sans-serif" font-size="16">Replace with docs/screenshot.png after running the app</text>
+  <text x="600" y="560" text-anchor="middle" fill="#6366f1" font-family="system-ui,sans-serif" font-size="20" font-weight="600">RepoPulse  GitHub Repository Health Analyzer</text>
+</svg>
