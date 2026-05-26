@@ -2,9 +2,15 @@
 
 **RepoPulse** analyzes any public GitHub repository and helps developers improve repository presentation, README quality, discoverability, and star potential.
 
-![RepoPulse Dashboard](./public/screenshot-placeholder.svg)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-repo--pulse.vercel.app-6366f1?style=for-the-badge)](https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Dragonia--developer%2FRepoPulse-181717?style=for-the-badge&logo=github)](https://github.com/Dragonia-developer/RepoPulse)
+[![License](https://img.shields.io/badge/License-MIT-emerald-500?style=for-the-badge)](./LICENSE)
 
-> Replace `public/screenshot-placeholder.svg` with a real screenshot at `docs/screenshot.png` after your first run.
+## Live Demo
+
+**Try it now → [https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/](https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/)**
+
+[![RepoPulse Dashboard](https://i.ibb.co/tw6MZT3w/image.png)](https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/)
 
 ## Features
 
@@ -113,11 +119,7 @@ src/
 
 ## Screenshots
 
-<!-- Add your screenshot here after capturing the dashboard -->
-
-| Dashboard | Score Card |
-|-----------|------------|
-| ![Placeholder](./public/screenshot-placeholder.svg) | Analyze any public repo |
+[![RepoPulse — analyze any GitHub repository](https://i.ibb.co/tw6MZT3w/image.png)](https://repo-pulse-1u1f9ybyl-ixsosgts-projects.vercel.app/)
 
 ## Scripts
 
